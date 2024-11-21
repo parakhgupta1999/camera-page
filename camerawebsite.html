@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camera website</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        position: relative;
+        width: 100%;
+        background: url(camera.jpg) no-repeat center center;
+        background-size: cover;
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
+    nav {
+        height: 7%;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        /* color: white; */
+        /* background: linear-gradient(to left, red, orange, blue, green, black, peru, purple, darkblue); */
+        background: rgba(255, 255, 255, 0.05);
+        /* border-radius: 15px; */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 01px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+        /* margin: 20px; */
+        padding-left: 60px;
+    }
+
+    .left a {
+        font-size: 40px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        padding-right: 60px;
+    }
+
+    .right a {
+        padding: 20px;
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 70px; */
+        position: absolute;
+        transform: translate(50pc, 30pc);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* padding: 20pc; */
+    }
+
+    .center {
+        font-size: 50px;
+        color: white;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .buttons {
+        width: 100%;
+        /* padding: 30px; */
+        display: flex;
+        gap: 20px;
+
+    }
+
+    input[value="Subscribe"] {
+        padding: 20px;
+        background-color: none;
+        font-size: 29px;
+        background: rgba(255, 255, 255, 0.00);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        width: 50%;
+        border-radius: 15px;
+    }
+
+    input[value="Learn More"] {
+        padding: 20px;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 15px;
+        color: white;
+        width: 50%;
+        font-size: 29px;
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="left">
+            <h1><A href="#">CodingLab</A></h1>
+        </div>
+        <div class="right">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+            <a href="">Feedback</a>
+
+        </div>
+
+    </nav>
+    <section>
+        <div class="center">
+            <h1>
+                Create Amazing Website <br>Pure HTML & CSS only
+            </h1>
+        </div>
+        <div class="buttons">
+            <input type="button" value="Learn More">
+            <input type="button" value="Subscribe">
+        </div>
+    </section>
+
+
+</body>
+
+</html>
